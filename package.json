@@ -1,5 +1,5 @@
 {
-  "name": "mnet-reporting-ui",
+  "name": "changelog",
   "version": "0.0.1",
   "main": "index.js",
   "module": "es6/index.js",
@@ -8,8 +8,7 @@
     "./src/js/contexts/ThemeContext/ThemeContext.js",
     "./es6/contexts/ThemeContext/ThemeContext.js"
   ],
-  "description": "all reporting components",
-  "homepage": "https://mnet-ui-base.netlify.com/",
+  "description": "a reusable componenet for changelog panel",
   "bugs": "http://tree.mn/react-ui/mnet-reporting-ui/issues",
   "license": "Apache-2.0",
   "repository": {
@@ -46,7 +45,7 @@
     "css": "^2.2.3",
     "hoist-non-react-statics": "^3.2.0",
     "markdown-to-jsx": "^6.9.1",
-    "mnet-ui-base": "https://github.com/sabarnix/mnet-ui-base.git#release",
+    "mnet-ui-base": "mnet-ui/mnet-ui-base#release",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react-desc": "^4.1.2",
