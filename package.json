@@ -31,7 +31,9 @@
     "storybook": "cross-env NODE_ENV=development start-storybook -p 9001 -c storybook -s ./storybook/public",
     "build-storybook": "build-storybook -c storybook -o storybook-static -s ./storybook/public",
     "prettier": "pretty-quick --staged",
-    "generate": "plop"
+    "generate": "plop",
+    "generate-readme": "cross-env NODE_ENV=production babel-node generateReadme concat",
+    "postbuild": "npm run generate-readme"
   },
   "peerDependencies": {
     "react": ">= 16.6.1",
