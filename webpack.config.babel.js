@@ -16,9 +16,9 @@ export default {
   entry: './src/js/index.js',
   output: {
     path: path.resolve('./dist'),
-    filename: 'mnetuibase.min.js',
+    filename: 'lib-name.min.js',
     libraryTarget: 'var',
-    library: 'MnetUIBase',
+    library: 'LibName',
   },
   externals: {
     react: 'React',

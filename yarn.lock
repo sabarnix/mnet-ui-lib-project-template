@@ -4889,7 +4889,7 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es5-ext@^0.10.35, es5-ext@^0.10.50:
+es5-ext@^0.10.35, es5-ext@^0.10.50, es5-ext@~0.10.14:
   version "0.10.53"
   resolved "https://registry.yarnpkg.com/es5-ext/-/es5-ext-0.10.53.tgz#93c5a3acfdbef275220ad72644ad02ee18368de1"
   integrity sha512-Xs2Stw6NiNHWypzRTY1MtaG/uJlwCk8kH81920ma8mvN8Xq1gsfhZvpkImLQArw8AHnv8MT2I45J3c0R8slE+Q==
@@ -5184,6 +5184,14 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
+event-emitter@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/event-emitter/-/event-emitter-0.3.5.tgz#df8c69eef1647923c7157b9ce83840610b02cc39"
+  integrity sha1-34xp7vFkeSPHFXuc6DhAYQsCzDk=
+  dependencies:
+    d "1"
+    es5-ext "~0.10.14"
 
 eventemitter3@^3.1.0:
   version "3.1.2"
@@ -6109,6 +6117,11 @@ good-listener@^1.2.2:
   integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
   dependencies:
     delegate "^3.1.2"
+
+google-fonts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/google-fonts/-/google-fonts-1.0.0.tgz#202e287a0c6272e3d651ac7e00c8f5aefc85b099"
+  integrity sha1-IC4oegxicuPWUax+AMj1rvyFsJk=
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9, graceful-fs@^4.2.0, graceful-fs@^4.2.2:
   version "4.2.3"
@@ -8286,21 +8299,26 @@ mixin-object@^2.0.1:
   dependencies:
     minimist "0.0.8"
 
-"mnet-ui-base@https://github.com/sabarnix/mnet-ui-base.git#release":
-  version "1.0.0"
-  resolved "https://github.com/sabarnix/mnet-ui-base.git#fe6b6c1835bea8b6f0df3d7c2356fd47c3be0e81"
+mnet-ui-base-theme-neo@sabarnix/mnet-ui-base-theme-neo:
+  version "0.0.1"
+  resolved "https://codeload.github.com/sabarnix/mnet-ui-base-theme-neo/tar.gz/8d96618ad9511944b0988b3c21d3f3d0bbd98025"
   dependencies:
-    "@testing-library/dom" "^6.1.0"
-    "@testing-library/jest-dom" "^4.2.4"
-    "@testing-library/react" "^9.1.3"
+    google-fonts "^1.0.0"
+
+mnet-ui-base@mnet-ui/mnet-ui-base#release:
+  version "1.0.1"
+  resolved "https://codeload.github.com/mnet-ui/mnet-ui-base/tar.gz/13455eb862c0936357689f2348fadd883278084d"
+  dependencies:
     css "^2.2.3"
+    event-emitter "^0.3.5"
     grommet-icons "^4.2.0"
     hoist-non-react-statics "^3.2.0"
     markdown-to-jsx "^6.9.1"
+    mnet-ui-base-theme-neo sabarnix/mnet-ui-base-theme-neo
     polished "^3.4.1"
     prop-types "^15.7.2"
     react-desc "^4.1.2"
-    recompose "^0.30.0"
+    uuid "^8.2.0"
 
 moment@^2.18.1:
   version "2.24.0"
@@ -11835,6 +11853,11 @@ uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+
+uuid@^8.2.0:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.1.tgz#2ba2e6ca000da60fce5a196954ab241131e05a31"
+  integrity sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==
 
 v8-compile-cache@2.0.3:
   version "2.0.3"
