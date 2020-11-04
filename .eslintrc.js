@@ -77,4 +77,12 @@ module.exports = {
     'react/sort-comp': 0,
     'require-yield': 0,
   },
+  overrides: [
+    {
+      files: ['*.stories.js', '**/stories/**'],
+      rules: {
+        'import/no-unresolved': 0,
+      },
+    },
+  ],
 };
